@@ -6,12 +6,15 @@
     "raven": "^2.4.2"
   },
   "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0",
     "micro-dev": "^2.2.1",
     "prettier": "1.11.1"
   },
   "scripts": {
     "start": "micro",
-    "dev": "micro-dev"
+    "dev": "micro-dev",
+    "precommit": "lint-staged"
   },
   "prettier": {
     "bracketSpacing": true,
@@ -20,5 +23,11 @@
     "singleQuote": true,
     "tabWidth": 2,
     "trailingComma": "es5"
+  },
+  "lint-staged": {
+    "*.{js,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
