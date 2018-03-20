@@ -58,7 +58,7 @@ module.exports = (req, res) => {
   // prep the querystring, if one exists
   const urlParts = url.parse(req.url, true);
 
-  // if an IP was passed as a querystring, use that instead
+  // if an IP was passed as a query string, use that instead
   if (urlParts.query.ip) {
     ip = urlParts.query.ip;
 
