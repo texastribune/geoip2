@@ -48,8 +48,6 @@ module.exports = (req, res) => {
   res.setHeader('Pragma', 'no-cache');
   res.setHeader('Expires', '0');
   res.setHeader('Vary', '*');
-
-  // TODO: allow filtering of origins
   res.setHeader('Access-Control-Allow-Origin', origin);
 
   // the requesting service's IP
