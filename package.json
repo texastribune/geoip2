@@ -1,15 +1,15 @@
 {
   "private": true,
   "dependencies": {
-    "maxmind": "^2.7.0",
-    "micro": "^9.3.2",
-    "raven": "^2.6.2"
+    "@sentry/node": "^4.3.4",
+    "maxmind": "^2.11.0",
+    "micro": "^9.3.3"
   },
   "devDependencies": {
     "husky": "^0.14.3",
     "lint-staged": "^7.2.0",
     "micro-dev": "^3.0.0",
-    "prettier": "^1.13.5"
+    "prettier": "^1.15.2"
   },
   "scripts": {
     "start": "micro",

@@ -3,14 +3,14 @@ const url = require('url');
 
 // packages
 const maxmind = require('maxmind');
-const Raven = require('raven');
+const Sentry = require('@sentry/node');
 
 // local
 const { processLookupMatch } = require('./utils');
 
 // if the SENTRY_DSN environment variable is provided, hook up Sentry
 if (process.env.SENTRY_DSN) {
-  Raven.config(process.env.SENTRY_DSN).install();
+  Sentry.init({ dsn: process.env.SENTRY_DSN });
 }
 
 // we only allow approved origins in, so this environment variable is required
