@@ -3,7 +3,7 @@
   "dependencies": {
     "@sentry/node": "^5.0.3",
     "maxmind": "^2.12.0",
-    "micro": "^9.3.3"
+    "micro": "^9.3.4"
   },
   "devDependencies": {
     "@zeit/git-hooks": "^0.1.4",
