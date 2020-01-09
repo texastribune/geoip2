@@ -1,7 +1,7 @@
 {
   "private": true,
   "dependencies": {
-    "@sentry/node": "^5.0.3",
+    "@sentry/node": "^5.11.0",
     "maxmind": "^2.12.0",
     "micro": "^9.3.3"
   },
